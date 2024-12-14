@@ -1,2 +1,2 @@
-# DS_Nobel_Prize
+# DS Nobel Prizes JSON format
 Nobel Prizes
