@@ -7,7 +7,7 @@ https://www.mongodb.com/try/download/compass
 
 -------
 
-#EJEMPLO PRÁCTICO:
+# EJEMPLO PRÁCTICO:
 
 ## ¿Cuántos españoles han ganado el premio nobel?
 
