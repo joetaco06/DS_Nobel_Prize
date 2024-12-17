@@ -27,7 +27,7 @@ Código:
 
 db.laureate.find({ gender: "male", bornCountry: "Spain" }).count();
 
-## ¿Cuántos laureados se llaman María o Jose?
+## ¿Cuántos laureados se llaman Maria o Jose?
 
 Código: 
 
@@ -35,7 +35,7 @@ db.laureate.find({ $or: { firstname: { $regex: "Maria", $options: "i" } },
     { firstname: { $regex: "Jose", $options: "i" } } ]}).count();
 
 
-## ¿Cuántas laureados han utilizado “develop” investigación? 
+## ¿Cuántos laureados han utilizado “develop” en sus investigaciones? 
 
 Código: 
 
