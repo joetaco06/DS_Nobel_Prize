@@ -4,11 +4,12 @@ Nobel Prizes
 
 -------
 
+#EJEMPLO PRÁCTICO:
 
-
-# ¿Cuántos españoles han ganado el premio nobel?
+## ¿Cuántos españoles han ganado el premio nobel?
 
 Código:
+
 db.laureate.find({ bornCountryCode: "ES" }).count();
 
 # ¿Cuántas mujeres han ganado el premio nobel?
