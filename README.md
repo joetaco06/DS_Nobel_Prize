@@ -31,8 +31,7 @@ db.laureate.find({ gender: "male", bornCountry: "Spain" }).count();
 
 Código: 
 
-db.laureate.find({ $or: { firstname: { $regex: "Maria", $options: "i" } },
-    { firstname: { $regex: "Jose", $options: "i" } } ]}).count();
+db.laureate.find({ $or: [{ firstname: { $regex: "Maria", $options: "i" } }, { firstname: { $regex: "Jose", $options: "i" } } ]}).count()
 
 
 ## ¿Cuántos laureados han utilizado “develop” en sus investigaciones? 
