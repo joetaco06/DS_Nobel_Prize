@@ -33,7 +33,7 @@ Código:
 db.laureate.find({ $or: [{ firstname: { $regex: "^Maria$", $options: "i" } }, { firstname: { $regex: "^Jose$", $options: "i" } } ]}).count()
 
 
-## ¿Cuántos laureados han utilizado la palabra “develop” en sus contribuciones? 
+## ¿En los reconocimientos a los laureados (motivation), en cuántos se ha incluido la palabra "develop"? 
 
 Código: 
 
