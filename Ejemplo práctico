@@ -19,11 +19,11 @@ db.laureate.find({ gender: "male", bornCountry: "Spain" }).count();
 
 Código: 
 
-db.laureate.find({ $or: { firstname: { $regex: "Maria", $options: "i" } },
-    { firstname: { $regex: "Jose", $options: "i" } } ]}).count();
+db.laureate.find({ $or: { firstname: { $regex: "^Maria$", $options: "i" } },
+    { firstname: { $regex: "^Jose$", $options: "i" } } ]}).count();
 
 
-# ¿Cuántas laureados han utilizado “develop” investigación? 
+# ¿En los reconocimientos a los laureados (motivation), en cuántos se ha incluido la palabra "develop"? 
 Código: 
 
 db.laureate.find({ "prizes.motivation": { $regex: "develop", $options: "i" } }).count();
