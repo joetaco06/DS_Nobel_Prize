@@ -1,13 +1,12 @@
 # DS Nobel Prize JSON format
 
-### Descargar MongoDB Compass aquí:
+### Descargar e instalar MongoDB Compass community server:
 
-https://www.mongodb.com/try/download/compass
-
+https://www.mongodb.com/try/download/community
 
 -------
 
-# EJEMPLO PRÁCTICO:
+# EJEMPLOS PRÁCTICOS:
 
 ## ¿Cuántos españoles han ganado el premio nobel?
 
@@ -34,7 +33,7 @@ Código:
 db.laureate.find({ $or: [{ firstname: { $regex: "Maria", $options: "i" } }, { firstname: { $regex: "Jose", $options: "i" } } ]}).count()
 
 
-## ¿Cuántos laureados han utilizado “develop” en sus investigaciones? 
+## ¿Cuántos laureados han utilizado la palabra “develop” en sus contribuciones? 
 
 Código: 
 
